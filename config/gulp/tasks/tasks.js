@@ -1,0 +1,8 @@
+export { default as bundle } from './bundle.js'
+export { default as clean } from './clean.js'
+export { default as files } from './files.js'
+export { default as fonts } from './fonts.js'
+export { default as html } from './html.js'
+export { default as images } from './images.js'
+export { default as serve } from './serve.js'
+export { default as watchFiles } from './watchFiles.js'
