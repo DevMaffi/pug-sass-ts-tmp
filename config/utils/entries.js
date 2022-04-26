@@ -14,9 +14,8 @@ const getRelPath = page => {
   let relPath = `./assets/js/${page}`
 
   ;['js', 'mjs', 'ts', 'mts'].forEach(ext => {
-    if (fs.existsSync(`${baseDirs.srcDir}/assets/js/${page}.${ext}`)) {
+    if (fs.existsSync(`${baseDirs.srcDir}/assets/js/${page}.${ext}`))
       relPath += `.${ext}`
-    }
   })
 
   return relPath
