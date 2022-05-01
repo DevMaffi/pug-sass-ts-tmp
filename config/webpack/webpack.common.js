@@ -40,7 +40,7 @@ const config = {
       '@svg': `${path.srcDir}/assets/svg`,
       '@utils': `${path.srcDir}/assets/js/utils`,
     },
-    extensions: ['.js', '.json', '.sass', '.scss', '.ts'],
+    extensions: ['.js', '.json', '.ts'],
   },
   output: { path: path.distDir },
   plugins: [new CleanWebpackPlugin()],

@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error",
-    "noEmit": true,
-    "strict": true,
-    "skipLibCheck": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "module": "esnext",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
     "useDefineForClassFields": true
   }
 }
