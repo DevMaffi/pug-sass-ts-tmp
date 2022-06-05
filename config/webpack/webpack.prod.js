@@ -57,11 +57,15 @@ const config = {
                 noErrorOnMissing: true,
               },
               {
-                from: `${wpContentDir}/config`,
+                from: '../text.txt',
+                noErrorOnMissing: true,
               },
               {
                 from: '../screenshot.png',
                 noErrorOnMissing: true,
+              },
+              {
+                from: `${wpContentDir}/config`,
               },
               {
                 context: `${wpContentDir}/template-parts`,
