@@ -15,7 +15,7 @@ const baseDirs = {
 const regEx = /^[a-z]+(?=(.pug$))/
 
 const pages = fs
-  .readdirSync(`${baseDirs.srcDir}/pug/views`)
+  .readdirSync(`${baseDirs.srcDir}/pug/pages`)
   .filter(page => page.match(regEx)) // exclude undefined
   .map(page => page.match(regEx)[0])
 
