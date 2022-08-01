@@ -1,6 +1,6 @@
 // Modules
 
-// node utils
+// node modules
 import fs from 'fs'
 
 // routes
@@ -10,7 +10,7 @@ import routes from './routes.js'
 
 const { baseDirs, pages } = routes
 
-const getRelPath = page => {
+const getEntryPath = page => {
   let relPath = `./assets/js/${page}`
 
   ;['js', 'mjs', 'ts', 'mts'].forEach(ext => {
@@ -22,7 +22,7 @@ const getRelPath = page => {
 }
 
 const entries = pages.reduce((entries, page) => {
-  entries[page] = ['@babel/polyfill', getRelPath(page)]
+  entries[page] = ['@babel/polyfill', getEntryPath(page)]
   return entries
 }, {})
 

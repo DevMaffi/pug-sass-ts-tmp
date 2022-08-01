@@ -15,7 +15,7 @@ const entries = {
     files: `${gulpDir}/files`,
   },
   src: {
-    pages: `${srcDir}/pug/views/*.pug`,
+    pages: `${srcDir}/pug/pages/*.pug`,
     bundle: `${srcDir}/assets/js/index.{js,ts}`,
     images: `${srcDir}/assets/images/**/*.{gif,jpg,jpeg,png,webp}`,
     svg: `${srcDir}/assets/svg/**/*.svg`,

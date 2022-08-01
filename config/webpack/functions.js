@@ -35,18 +35,18 @@ const applyHtmlPlugin = ({ minify = false, ext = 'html' } = {}) =>
       })
   )
 
-const cssLoaders = extra => {
+const cssLoaders = (...extra) => {
   let loaders = [MiniCssExtractPlugin.loader, 'css-loader']
 
-  if (extra) loaders = [...loaders, extra]
+  if (extra) loaders = [...loaders, ...extra]
 
   return loaders
 }
 
-const babelPresets = extra => {
+const babelPresets = (...extra) => {
   let presets = ['@babel/preset-env']
 
-  if (extra) presets = [...presets, extra]
+  if (extra) presets = [...presets, ...extra]
 
   return presets
 }

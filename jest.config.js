@@ -15,7 +15,7 @@ const config = {
     '^@common$': '<rootDir>/src/assets/js/modules/common/index.ts',
     '^@files/(.*)$': '<rootDir>/src/assets/files/$1',
     '^@i18n$': '<rootDir>/src/assets/js/i18n/index.ts',
-    '^@images/(.*)$': '<rootDir>/src/assets/images/$1',
+    '^@img/(.*)$': '<rootDir>/src/assets/images/$1',
     '^@interfaces$': '<rootDir>/src/assets/js/model/interfaces/index.ts',
     '^@model$': '<rootDir>/src/assets/js/model/index.ts',
     '^@modules$': '<rootDir>/src/assets/js/modules/index.ts',

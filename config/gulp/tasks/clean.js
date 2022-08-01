@@ -1,14 +1,15 @@
 // Modules
 
 // plugins
-import del from 'del'
+import { deleteAsync } from 'del'
 
 // entries
 import entries from '../entries.js'
 
 // Task
 
-const clean = () => del(entries.gulpDir)
+const clean = () =>
+  deleteAsync([`${entries.gulpDir}/**`, `!${entries.gulpDir}`])
 
 // Exports
 
